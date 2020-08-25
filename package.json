@@ -1,14 +1,30 @@
 {
-  "name": "static-site",
+  "name": "readme-plus",
   "version": "1.0.0",
-  "description": "",
+  "description": "[How to create a Professional README](./readme-guide.md)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Bryan Rivera",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.5.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brivera14/README-PLUS.git"
+  },
+  "keywords": [
+    "readme",
+    "read",
+    "file",
+    "plus",
+    "md"
+  ],
+  "bugs": {
+    "url": "https://github.com/brivera14/README-PLUS/issues"
+  },
+  "homepage": "https://github.com/brivera14/README-PLUS#readme"
 }
