@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 
 // array of questions for user
-const promptReadmeQuestions = () => {
+const promptReadmeQuestions = userAnswers => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -79,4 +79,4 @@ const promptReadmeQuestions = () => {
 
 // function call to initialize program
 // init();
-promptReadmeQuestions();
+promptReadmeQuestions().then(userAnswers => {console.log(userAnswers)});
