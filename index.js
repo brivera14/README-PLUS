@@ -30,26 +30,12 @@ const promptReadmeQuestions = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Enter the steps required to install your project: (Required)',
-            validate: instInput => {
-                if (instInput) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+            message: 'Enter the steps required to install your project: ',
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Enter instructions and examples for use: (Required)',
-            validate: usageInput => {
-                if (usageInput) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+            message: 'Enter instructions and examples for use:',
         },
         {
             type: 'confirm',
@@ -70,9 +56,10 @@ const promptReadmeQuestions = () => {
             default: false,
         },
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
-            message: 'Please Enter your license for this project:',
+            message: 'Please choose the license for this project:',
+            choices: ['APACHE', 'MIT', 'BSD', 'GPL'],
             when: ({ confirmLicense }) => confirmLicense
         },
     ])
@@ -82,13 +69,14 @@ const promptReadmeQuestions = () => {
 // ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// }
 
 // function to initialize program
-function init() {
+// function init() {
 
-}
+// }
 
 // function call to initialize program
-init();
+// init();
+promptReadmeQuestions();
