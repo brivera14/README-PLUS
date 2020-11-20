@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const { writeFile } = require('./utils/generateMarkdown');
+const readmeFile = require('./src/readme-template');
 
 // array of questions for user
 const promptReadmeQuestions = userAnswers => {
@@ -79,4 +81,17 @@ const promptReadmeQuestions = userAnswers => {
 
 // function call to initialize program
 // init();
-promptReadmeQuestions().then(userAnswers => {console.log(userAnswers)});
+promptReadmeQuestions()
+.then(userAnswers => {
+    console.log(userAnswers);
+    return readmeFile(userAnswers);
+})
+.then(pageReadme => {
+    return writeFile(pageReadme);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse);
+})
+.catch(err => {
+    console.log(err);
+});
