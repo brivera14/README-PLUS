@@ -1,18 +1,18 @@
 
 
-# Readme Plus
+# README PLUS
 
 ## Description
     
-sfjdfsgkhsbdgkhsdbg
+JDNASFDKJASDHFBASD,FHBADFHASBDF
 
 ## Installation
     
-shkdfbgsdkbgsdjfkhbgsdfg
+HASDFHBASDFHBADSFLHBASDFHLASBDFLAHDFS
 
 ## Usage
 
-khsbgdfshkbgsdgbsdgbsdgbsdgbsdgbdsg
+HASDBFASSDFVSDFV
 
 ## Credits
 
@@ -20,9 +20,9 @@ undefined
 
 ## License
 
-
+MIT
 
 ## Badges
 
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
