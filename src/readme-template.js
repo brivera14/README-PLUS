@@ -27,30 +27,30 @@ module.exports = readmeFile => {
     
     return `
 
-    # ${title}
+# ${title}
 
-    ## Description
+## Description
     
-    ${description}
+${description}
 
-    ## Installation
+## Installation
     
-    ${installation}
+${installation}
 
-    ## Usage
+## Usage
 
-    ${usage}
+${usage}
 
-    ## Credits
+## Credits
 
-    ${collaborators}
+${collaborators}
 
-    ## License
+## License
 
-    ${StringLicense}
+${StringLicense}
 
-    ## Badges
+## Badges
 
-    ${StringBadgeLicense}
+${StringBadgeLicense}
     `;
 };
